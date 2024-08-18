@@ -1,0 +1,12 @@
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; // Espacement entre les cartes
+    justify-content: space-between; // Assure un espacement égal entre les cartes
+    max-width: 1240px;
+    margin: 0 auto; // Centrer la grille sur la page
+    padding: 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
