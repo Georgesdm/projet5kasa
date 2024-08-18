@@ -9,4 +9,12 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     box-sizing: border-box;
+
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      background-color: white;
+      gap: 20px;
+      padding: 0;
+    }
   }
