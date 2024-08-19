@@ -7,7 +7,7 @@ const PropertyList = () => {
   return (
     <div className="property-list">
       {logements.map((logement) => (
-        <Card key={logement.id} title={logement.title} imageUrl={logement.cover} />
+        <Card key={logement.id} id={logement.id} title={logement.title} imageUrl={logement.cover} />
       ))}
     </div>
   );
