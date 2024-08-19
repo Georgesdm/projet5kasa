@@ -10,3 +10,9 @@ main {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
