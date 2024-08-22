@@ -1,0 +1,33 @@
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    ul, p {
+        list-style-type: none;
+        padding: 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+
+        .collapse-header h2 {
+            font-size: 13px;
+            font-weight: 700;
+        }
+      
+          ul, p {
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+    }
+    
+}
