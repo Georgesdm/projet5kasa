@@ -3,6 +3,10 @@ import logements from '../data/logements.json';
 import Slideshow from '../components/Slideshow/Slideshow';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Collapse from '../components/Collapse/Collapse';
+import Ranking from '../components/Ranking';
+import '../styles/FicheLogementPage.scss';
+
 
 const FicheLogementPage = () => {
   const { id } = useParams();
@@ -24,7 +28,49 @@ const FicheLogementPage = () => {
   return (
     <div>
         <Slideshow images={logement.pictures} />
-        <h1>{logement.title}</h1>
+        <div className="fiche-logement-content">
+          <div className="title-host">
+            <div className="title-location">
+              <h1>{logement.title}</h1>
+              <div className="location">{logement.location}</div>
+           </div>
+            <div className="host">
+              <div className="host-name">
+                <div>{logement.host.name.split(' ')[0]}</div>
+                <div>{logement.host.name.split(' ')[1]}</div>
+              </div>
+              <div className="host-picture">
+                <img src={logement.host.picture} alt={logement.host.name} />
+              </div>
+            </div>
+          </div>
+          <div className="tags-ranking">
+            <div className="tags">
+              {logement.tags.map((tag, index) => (
+                <div key={index} className="tag">
+                  {tag}
+                </div>
+              ))}
+            </div>
+            <Ranking rating={logement.rating} />
+          </div>
+        <div className="description-equipements">
+          <div className="collapse-container">
+            <Collapse title="Description">
+              <p>{logement.description}</p>
+            </Collapse>
+          </div>
+          <div className="collapse-container">
+            <Collapse title="Équipements">
+              <ul>
+                {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            </Collapse>
+          </div>
+        </div>    
+        </div>
     </div>
   );
 };

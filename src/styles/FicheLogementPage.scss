@@ -1,0 +1,139 @@
+.fiche-logement-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    h1 {
+      font-size: 36px;
+      font-weight: 100;
+      color: #FF6060;
+      margin-bottom: 5px;
+    }
+  
+    .host {
+      display: flex;
+      align-items: center;
+  
+      &-name {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        color: #FF6060;
+        text-align: right;
+      }
+  
+      &-picture {
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+      }
+    }
+}
+
+.title-location {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    .location {
+      font-size: 18px;
+      font-weight: 500;
+    }
+}
+
+
+.description-equipements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+      .collapse-container {
+        width: 48%;
+      }
+
+      .collapse-header {
+        padding: 10px;
+      }
+
+      .collapse-header h2 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    
+      .collapse-content {
+        height: 100%;
+      }
+
+      ul, p {
+        list-style-type: none;
+        padding: 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25.67px;
+      }
+
+      li {
+        margin-bottom: 1px;
+      }
+}
+
+.tags-ranking {
+  display: flex;
+  justify-content: space-between;
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    
+      .tag {
+        background-color: #FF6060;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+    }
+
+    .rating {
+      display: flex;
+      gap: 8px;
+    
+      .star {
+        width: 20px;
+        height: 20px;
+      }
+      
+      .fa-star {
+        color: #E3E3E3;
+        font-size: 24px;  ;
+      }
+      
+      .fa-star.active {
+        color: #ff6060;
+      }
+    }
+}
