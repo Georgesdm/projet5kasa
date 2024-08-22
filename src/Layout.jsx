@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from './assets/logo.png';
 import logowhite from './assets/logo_w.png';
 
@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
           <img src={logo} alt="Logo Kasa" className="logo" />
           <nav>
             <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/about">À Propos</Link></li>
+              <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Accueil</NavLink></li>
+              <li><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>À Propos</NavLink></li>
             </ul>
           </nav>
         </div>

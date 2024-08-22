@@ -33,6 +33,10 @@ header {
               }
             }
           }
+
+          li .active {
+              text-decoration: underline;
+          }
         }
     }
 }
@@ -43,27 +47,30 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  bottom: 0;
   width: 100%;
   margin-top: 50px;
 
   .footer-container {
     max-width: 1240px;
+    height: 209px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
 
   .footer-logo {
-    max-width: 70px;
+    max-width: 122px;
+    height: auto;
   }
 
   p {
     margin: 0;
     font-size: 16px;
+    line-height: 34.22px;
+    font-weight: 500;
   }
 }
 
@@ -97,10 +104,14 @@ footer {
 
     .footer-container {
       gap: 10px;
-    }
 
-    p {
-      font-size: 12px;
+      p {
+        font-size: 12px;
+        max-width: 133px;
+        line-height: 17.11px;
+      }
     }
+    
+
     
 }
