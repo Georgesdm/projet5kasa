@@ -1,7 +1,8 @@
 .slideshow-container {
     max-width: 1240px;
     margin: 0 auto; /* Centre le conteneur horizontalement */
-    padding: 20px;
+    padding-top: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -59,4 +60,36 @@
         font-size: 18px;
         background: transparent;
     }
-  }
+}
+
+@media (max-width: 768px) {
+
+    .slideshow-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .slideshow {
+        height: 255px;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .left-arrow, .right-arrow {
+            width: 15px;
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+        
+        .right-arrow {
+            right: 10px;
+        }
+    }
+
+    .slide-number {
+        display: none;
+    }
+
+}

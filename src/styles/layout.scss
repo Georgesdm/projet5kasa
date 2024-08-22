@@ -6,15 +6,16 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
     }
   
     .logo {
-      max-width: 100px;
+      width: 210px;
     }
   
     nav {
+
         ul {
           list-style: none;
           display: flex;
@@ -23,7 +24,7 @@ header {
           li {
             a {
               text-decoration: none;
-              color: #333;
+              color: black;
               font-size: 18px;
               font-weight: 500;
     
@@ -33,18 +34,6 @@ header {
             }
           }
         }
-
-      @media (max-width: 768px) {
-        ul {
-          gap: 26px; // Réduire l'espacement entre les liens
-    
-          li {
-            a {
-              font-size: 14px; // Réduire la taille de la police sur mobile
-            }
-          }
-        }
-      }
     }
 }
   
@@ -59,7 +48,7 @@ footer {
   margin-top: 50px;
 
   .footer-container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -76,8 +65,36 @@ footer {
     margin: 0;
     font-size: 16px;
   }
+}
 
   @media (max-width: 768px) {
+
+    header {
+
+      .logo {
+        width: 145px;
+      }
+
+      nav {
+
+        ul {
+          gap: 26px;
+
+          li {
+            a {
+              text-transform: uppercase;
+              font-size: 12px;
+    
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+    }
+      
+    }
+
     .footer-container {
       gap: 10px;
     }
@@ -86,5 +103,4 @@ footer {
       font-size: 12px;
     }
     
-  }
 }
