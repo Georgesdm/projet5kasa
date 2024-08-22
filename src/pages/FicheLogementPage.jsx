@@ -33,7 +33,7 @@ const FicheLogementPage = () => {
             <div className="title-location">
               <h1>{logement.title}</h1>
               <div className="location">{logement.location}</div>
-           </div>
+           </div>          
             <div className="host">
               <div className="host-name">
                 <div>{logement.host.name.split(' ')[0]}</div>
@@ -54,6 +54,20 @@ const FicheLogementPage = () => {
             </div>
             <Ranking rating={logement.rating} />
           </div>
+
+          <div className="ranking-host-mobile">
+            <Ranking rating={logement.rating} />
+            <div className="host-mobile">
+              <div className="host-name-mobile">
+                <div>{logement.host.name.split(' ')[0]}</div>
+                <div>{logement.host.name.split(' ')[1]}</div>
+              </div>
+              <div className="host-picture-mobile">
+                <img src={logement.host.picture} alt={logement.host.name} />
+              </div>
+          </div>
+        </div>
+
         <div className="description-equipements">
           <div className="collapse-container">
             <Collapse title="Description">
