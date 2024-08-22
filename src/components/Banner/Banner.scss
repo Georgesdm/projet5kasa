@@ -8,7 +8,7 @@
     max-width: 1240px;
     height: 223px;
     margin: 20px auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,16 +34,26 @@
       font-weight: 700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Ombre portée sur le texte
     }
+}
 
-    // Media query pour les écrans de 768px de largeur ou moins
-    @media (max-width: 768px) {
-      height: 111px; 
-      justify-content: flex-start;
-      padding-left: 20px;
 
-      h1 {
-          font-size: 24px;
-          text-align: left;
-      }
-  }
+@media (max-width: 768px) {
+  .banner {
+    height: 111px; 
+    justify-content: flex-start;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-bottom: 15px;
+    align-items: center;
+
+    &::after {
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+}
 }
