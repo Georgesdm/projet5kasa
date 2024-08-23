@@ -5,27 +5,53 @@
     justify-content: center;
     text-align: center;
     color: #ff6060;
+    gap: 80px;
   
     h1 {
       font-size: 288px;
       margin: 0;
-      margin-top: 80px;
     }
   
     p {
       font-size: 36px;
       color: #ff6060;
-      margin: 80px 0;
     }
   
     a {
       font-size: 1rem;
       color: black;
       text-decoration: underline;
-      margin-top: 80px;
   
       &:hover {
         text-decoration: none;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+
+    .error-page {
+      margin-top: 113px;
+      margin-bottom: 113px;
+      gap: 113px;
+
+      h1 {
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 136.9px;
+      }
+  
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+      }
+  
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.96px;
+      }
+    }
+
   }
