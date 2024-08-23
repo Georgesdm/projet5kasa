@@ -10,3 +10,16 @@ main {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.scale-up {
+  animation: scaleUp 0.3s ease-in-out;
+}

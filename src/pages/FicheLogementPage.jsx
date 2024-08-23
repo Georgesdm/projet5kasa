@@ -26,7 +26,7 @@ const FicheLogementPage = () => {
   }
 
   return (
-    <div>
+    <div className="scale-up">
         <Slideshow images={logement.pictures} />
         <div className="fiche-logement-content">
           <div className="title-host">
