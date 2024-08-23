@@ -70,10 +70,6 @@
         width: 48%;
       }
 
-      .collapse-header {
-        padding: 10px;
-      }
-
       .collapse-header h2 {
         font-size: 18px;
         font-weight: 700;
@@ -184,9 +180,14 @@
       width: 100%;
     }
 
-    .collapse-header h2 {
-      font-size: 13px;
-      font-weight: 700;
+    .collapse-header {
+      height: 30px;
+
+      h2 {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18.54px;
+      }
     }
 
     ul, p {
@@ -214,6 +215,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .rating {
+      display: flex;
+      gap: 4px;
+    }
     
     .star {
       width: 15px;
@@ -221,7 +227,7 @@
     }
 
     .fa-star {
-      font-size: 18px;
+      font-size: 15px;
       color: #E3E3E3;
     }
 
@@ -240,6 +246,9 @@
         font-weight: 500;
         color: #FF6060;
         text-align: right;
+        gap: 3px;
+        display: flex;
+        flex-direction: column;
       }
 
       .host-picture-mobile {

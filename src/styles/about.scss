@@ -26,12 +26,17 @@
 @media (max-width: 768px) {
     .about-content {
 
-        .collapse-header h2 {
-            font-size: 13px;
-            font-weight: 700;
+        .collapse-header {
+            height: 30px;
+
+            h2 {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 18.54px;
+            }
         }
-      
-          ul, p {
+
+        ul, p {
             font-size: 12px;
             line-height: 17.11px;
         }
