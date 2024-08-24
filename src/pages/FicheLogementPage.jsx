@@ -16,7 +16,7 @@ const FicheLogementPage = () => {
   useEffect(() => {
     if (!logement) {
       // Rediriger vers la page d'erreur
-      navigate('/404');
+      navigate('/404', { replace: true });
     }
   }, [logement, navigate]);
 
