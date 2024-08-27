@@ -25,7 +25,7 @@ const aboutData = [
 
 const AboutPage = () => {
   return (
-    <div className="scale-up">
+    <div className="fade-in">
       <Banner type="about" />
       <div className="about-content">
         {aboutData.map((item, index) => (

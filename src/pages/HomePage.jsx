@@ -4,7 +4,7 @@ import PropertyList from '../components/PropertyList/PropertyList';
 
 const HomePage = () => {
   return (
-    <div className="scale-up">
+    <div className="fade-in">
       <Banner type="home" />
       <PropertyList />
     </div>

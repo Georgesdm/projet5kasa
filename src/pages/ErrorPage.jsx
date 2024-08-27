@@ -4,7 +4,7 @@ import '../styles/error.scss';
 
 const ErrorPage = () => {
   return (
-    <div className="scale-up">
+    <div className="fade-in">
       <div className="error-page">
         <h1>404</h1>
         <p>Oups! La page que vous demandez n'existe pas.</p>

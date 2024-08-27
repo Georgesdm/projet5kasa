@@ -11,15 +11,21 @@ main {
     padding-right: 20px;
 }
 
-@keyframes scaleUp {
-  from {
-    transform: scale(0.8);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: scale(1);
+
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-.scale-up {
-  animation: scaleUp 0.3s ease-in-out;
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
 }
