@@ -15,6 +15,11 @@
     p {
       font-size: 36px;
       color: #ff6060;
+
+      .mobile-br {
+        display: none;
+    }
+
     }
   
     a {
@@ -26,6 +31,8 @@
         text-decoration: none;
       }
     }
+
+    
   }
 
   @media (max-width: 768px) {
@@ -45,6 +52,11 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 25.67px;
+
+        .mobile-br {
+          display: inline;
+      }
+
       }
   
       a {
